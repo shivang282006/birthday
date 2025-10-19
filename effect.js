@@ -80,17 +80,17 @@ $('document').ready(function(){
         });
     }
 
-    function loopSix() {
-        var randleft = 1000*Math.random();
-        var randtop = 500*Math.random();
-        $('#b6').animate({left:randleft,bottom:randtop},10000,function(){
-            loopSix();
-        });
-    }
-   
-    }
+	function loopSix() {
+     var randleft = 1000*Math.random();
+    var randtop = 500*Math.random();
+   $('#b6').animate({left:randleft,bottom:randtop},10000,function(){
+      loopSix();
+    });
+ } // <-- Missing closing brace for loopSix function should be here
 
-    $('#balloons_flying').click(function(){
+	
+ $('#balloons_flying').click(function(){
+// ... rest of the code    $('#balloons_flying').click(function(){
         $('.balloon-border').animate({top:-500},8000);
         // Note: The classes are still applied to the original balloon IDs
         $('#b1,#b4,#b5,#b7').addClass('balloons-rotate-behaviour-one');
@@ -194,4 +194,5 @@ $('document').ready(function(){
 
 
 //alert('hello');
+
 
