@@ -57,7 +57,7 @@ $('document').ready(function(){
     });
 
     
-    }
+    
     function loopThree() {
         var randleft = 1000*Math.random();
         var randtop = 500*Math.random();
@@ -190,6 +190,7 @@ $('document').ready(function(){
         
     });
 });
+
 
 
 //alert('hello');
